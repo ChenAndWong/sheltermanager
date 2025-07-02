@@ -21,7 +21,8 @@ i have NOT set up the crons.
 5. 
 ```
 sudo ln -s /var/www/sheltermanager/shelterdemo.initial_nginx /etc/nginx/sites-available/shelterdemo
-sudo ln -s /var/www/sheltermanager/shelterdemo.initial_nginx /etc/nginx/sites-enabled/shelt
+sudo ln -s /var/www/sheltermanager/shelterdemo.initial_nginx /etc/nginx/sites-enabled/shelterdemo
+sudo systemctl reload nginx
 ```
 ### sqlite3 setup
 
