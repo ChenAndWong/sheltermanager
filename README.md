@@ -18,7 +18,11 @@ i have NOT set up the crons.
 2. install sqlite3 - db is /var/www/asm.db
 3. `sudo ln -s /var/www/sheltermanager/asm3.service /etc/systemd/system/asm3.service`
 4. `sudo systemctl enable asm3.service`
-
+5. 
+```
+sudo ln -s /var/www/sheltermanager/shelterdemo.initial_nginx /etc/nginx/sites-available/shelterdemo
+sudo ln -s /var/www/sheltermanager/shelterdemo.initial_nginx /etc/nginx/sites-enabled/shelt
+```
 ### sqlite3 setup
 
 apt-get install sqlite3
