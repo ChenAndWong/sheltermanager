@@ -24,6 +24,9 @@ sudo ln -s /var/www/sheltermanager/shelterdemo.initial_nginx /etc/nginx/sites-av
 sudo ln -s /var/www/sheltermanager/shelterdemo.initial_nginx /etc/nginx/sites-enabled/shelterdemo
 sudo systemctl reload nginx
 ```
+6. Make sure DNS for shelterdemo.chenandwong.consulting is set up in digital ocean if you haven't already.
+6. `sudo certbot certonly --webroot -w /var/www/sheltermanager -d shelterdemo.chenandwong.consulting -d www.shelterdemo.chenandwong.consulting`
+7. 
 ### sqlite3 setup
 
 apt-get install sqlite3
