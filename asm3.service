@@ -1,0 +1,16 @@
+  [Unit]
+  Description=Animal Shelter Manager 3
+  After=network.target
+
+  [Service]
+  Type=simple
+  User=www-data
+  Group=www-data
+  WorkingDirectory=/usr/lib/sheltermanager3
+  ExecStart=/usr/bin/python3 /usr/lib/sheltermanager3/main.py
+  Restart=always
+  RestartSec=10
+  Environment=PYTHONPATH=/usr/lib/sheltermanager3
+
+  [Install]
+  WantedBy=multi-user.target
